@@ -1,0 +1,55 @@
+
+$article-border-radius: 3px;
+$article-header-border-radius: 1px;
+$color-python-blue: rgb(47, 116, 171);
+$color-python-yellow: rgb(255, 214, 79);
+
+.links {
+    article {
+        border-radius: $article-border-radius;
+        border: 1px solid $color-python-blue;
+        margin: 15px 5px 5px 5px;
+
+        h2 {
+            border-radius: $article-header-border-radius $article-header-border-radius 0 0;
+            background-color: $color-python-blue;
+            color: white;
+            font-weight: normal;
+            font-size: 18px;
+            padding: 6px 8px;
+            margin: 0;
+        }
+
+        .content {
+            padding: 10px;
+
+            p {
+                margin: 3px 0;
+            }
+
+            ul {
+                margin: 0;
+                list-style: none;
+                padding-left: 0;
+            }
+
+            a {
+                display: block;
+                width: 93%;
+                text-decoration: none;
+                text-align: center;
+                color: $color-python-blue;
+                padding: 3px 6px;
+                border: 1px solid $color-python-blue;
+                border-radius: 3px;
+                margin-top: 10px;
+                transition: 0.2s all ease;
+
+                &:hover {
+                    color: white;
+                    background-color: $color-python-blue;
+                }
+            }
+        }
+    }
+}

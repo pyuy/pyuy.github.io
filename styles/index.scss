@@ -1,19 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
 
 @import "modules/normalize";
 @import "modules/header";
 @import "modules/links";
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    
-    > article {
-        width: 25%;
-    }
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contribute {
+  text-decoration: none;
+  color: lighten(black, 50%);
+  margin-top: 1em;
+  text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 body {
-    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
 }

@@ -1,0 +1,17 @@
+{
+  "name": "pyuy-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pyuy/pyuy.github.io.git",
+  "author": "Franco Correa <franco@francocorrea.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "css:build": "node-sass ./styles/index.scss ./public/css/index.css",
+    "css:watch": "nodemon -x \"npm run css:build\""
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}
